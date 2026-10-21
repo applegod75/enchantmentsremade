@@ -1,13 +1,3 @@
 {
-  "itemGroup.enchantmentsremade": "Example Mod Tab",
-  "block.enchantmentsremade.example_block": "Example Block",
-  "item.enchantmentsremade.example_item": "Example Item",
-
-  "enchantmentsremade.configuration.title": "enchantments remade Configs",
-  "enchantmentsremade.configuration.section.enchantmentsremade.common.toml": "enchantments remade Configs",
-  "enchantmentsremade.configuration.section.enchantmentsremade.common.toml.title": "enchantments remade Configs",
-  "enchantmentsremade.configuration.items": "Item List",
-  "enchantmentsremade.configuration.logDirtBlock": "Log Dirt Block",
-  "enchantmentsremade.configuration.magicNumberIntroduction": "Magic Number Text",
-  "enchantmentsremade.configuration.magicNumber": "Magic Number"
+  "item.enchantmentsremade._": "_"
 }
