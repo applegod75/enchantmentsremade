@@ -1,5 +1,7 @@
 package com.applegoddess.enchantmentsremade;
 
+import com.applegoddess.enchantmentsremade.block.ModBlocks;
+import com.applegoddess.enchantmentsremade.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,6 +43,8 @@ public class EnchantmentsRemade {
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public EnchantmentsRemade(IEventBus modEventBus, ModContainer modContainer) {
+        ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in.

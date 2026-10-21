@@ -1,6 +1,7 @@
 package com.applegoddess.enchantmentsremade.datagen;
 
 import com.applegoddess.enchantmentsremade.EnchantmentsRemade;
+import com.applegoddess.enchantmentsremade.block.ModBlocks;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -13,6 +14,6 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels){
-
+        blockModels.createTrivialCube(ModBlocks.TEST_BLOCK.get());
     }
 }
