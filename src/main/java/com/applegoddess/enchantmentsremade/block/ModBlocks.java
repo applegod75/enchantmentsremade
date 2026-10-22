@@ -1,6 +1,7 @@
 package com.applegoddess.enchantmentsremade.block;
 
 import com.applegoddess.enchantmentsremade.EnchantmentsRemade;
+import com.applegoddess.enchantmentsremade.block.custom.EnchantmentTableBlock;
 import com.applegoddess.enchantmentsremade.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -25,6 +26,16 @@ public class ModBlocks {
                     .explosionResistance(10.0f)
                     .sound(SoundType.GRAVEL)
                     .lightLevel(state -> 7)
+            )
+    );
+
+    public static final DeferredBlock<EnchantmentTableBlock> ENCHANTMENT_TABLE_BLOCK = registerBlock(
+            "enchantment_table_block",
+            props -> new EnchantmentTableBlock(props
+                    .destroyTime(5.0f)
+                    .explosionResistance(100.0f)
+                    .sound(SoundType.WOOD)
+                    .lightLevel(state -> 5)
             )
     );
 
