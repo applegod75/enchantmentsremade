@@ -13,6 +13,7 @@ public class ModItems {
             "test_item",
             Item::new,
             props -> props
+                    .stacksTo(1)
     );
 
     public static void register(IEventBus eventBus){
