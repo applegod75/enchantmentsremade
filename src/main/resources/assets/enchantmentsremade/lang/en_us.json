@@ -1,4 +1,5 @@
 {
   "block.enchantmentsremade.test_block": "test block",
-  "item.enchantmentsremade.test_item": "test item"
+  "item.enchantmentsremade.test_item": "test item",
+  "block.enchantmentsremade.enchantment_table_block": "Enchantment Table"
 }

@@ -1,6 +1,7 @@
 package com.applegoddess.enchantmentsremade;
 
 import com.applegoddess.enchantmentsremade.block.ModBlocks;
+import com.applegoddess.enchantmentsremade.blockentity.ModBlockEntities;
 import com.applegoddess.enchantmentsremade.item.ModItems;
 import net.minecraft.world.level.ItemLike;
 import org.slf4j.Logger;
@@ -45,6 +46,7 @@ public class EnchantmentsRemade {
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public EnchantmentsRemade(IEventBus modEventBus, ModContainer modContainer) {
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

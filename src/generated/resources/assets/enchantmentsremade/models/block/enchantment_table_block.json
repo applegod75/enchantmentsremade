@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "enchantmentsremade:block/enchantment_table_block"
+  }
+}

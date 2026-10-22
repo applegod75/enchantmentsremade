@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enchantmentsremade:block/enchantment_table_block"
+    }
+  }
+}
