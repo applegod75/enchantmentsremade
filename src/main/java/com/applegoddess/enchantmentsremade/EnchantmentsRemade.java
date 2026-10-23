@@ -3,6 +3,7 @@ package com.applegoddess.enchantmentsremade;
 import com.applegoddess.enchantmentsremade.block.ModBlocks;
 import com.applegoddess.enchantmentsremade.blockentity.ModBlockEntities;
 import com.applegoddess.enchantmentsremade.item.ModItems;
+import com.applegoddess.enchantmentsremade.menu.ModMenuTypes;
 import net.minecraft.world.level.ItemLike;
 import org.slf4j.Logger;
 
@@ -48,6 +49,7 @@ public class EnchantmentsRemade {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in.
